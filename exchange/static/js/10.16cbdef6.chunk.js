@@ -1,0 +1,2 @@
+(this.webpackJsonpuniswap=this.webpackJsonpuniswap||[]).push([[10],{997:function(n,a,r){"use strict";r.r(a),r.d(a,"default",(function(){return u}));var i=r(0),t=r.n(i),e=r(991);function u(n){var a=n.initialCurrency,r=n.params;return t.a.createElement(e.a,{initialCurrency:a,params:r})}}}]);
+//# sourceMappingURL=10.16cbdef6.chunk.js.map
