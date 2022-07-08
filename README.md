@@ -1,2 +1,2 @@
-# unidao.fund
-Public website of UniDAO
+# bodhidao.io
+Public website of Bodhi DAO
