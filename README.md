@@ -1,2 +1,2 @@
-# bodhidao.io
-Public website of Bodhi DAO
+# gurucollective.xyz
+Public website of Guru Collective
