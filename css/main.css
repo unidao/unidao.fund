@@ -525,6 +525,8 @@ main {
   }
 
   .event-begins {
+    width: 100%;
+    max-width: 100%;
 
   }
 }
@@ -629,6 +631,7 @@ main {
   .pass-container {
     padding-top: 32px;
     padding-bottom: 32px;
+    flex-wrap: wrap;
   }
 
   .NFT-offer-container {
@@ -741,9 +744,8 @@ main {
 .pass-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 2vw;
+  gap: 6vw;
   justify-content: center;
 }
 
@@ -1689,3 +1691,8 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.03em;
 }
 
+.nft-features{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
