@@ -1699,7 +1699,7 @@ body::-webkit-scrollbar-thumb {
   gap: 1rem;
 }
 
-.mySlides {display: none; border-radius: 16px}
+.mySlides {display: none}
 /* Slideshow container */
 .slideshow-container {
   position: relative;
