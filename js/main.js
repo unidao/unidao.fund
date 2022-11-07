@@ -52,6 +52,7 @@ function myFunction() {
 //   x[slideIndex-1].style.display = "block";
 //   setTimeout(carousel, 2000); // Change image every 2 seconds
 // }
+
 let slideIndex = 0;
 showSlides();
 
