@@ -437,20 +437,11 @@ main {
 }
 
 .partner-img {
-  /*width: 100%;*/
-  /*max-width: 220px;*/
-  /*max-height: 140px;*/
-  /*height: auto;*/
-  /*!*height: 100%;*!*/
-  /*width: 100%;*/
-  /*max-width: 220px;*/
-  /*max-height: 60px;*/
-  /*height: auto;*/
-/*width: 100%;*/
   width: 100%;
   max-width: fit-content;
-  height: auto;
+  height: 100%;
   max-height: 60px;
+  object-fit: contain;
 }
 
 .hero-block {
