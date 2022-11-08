@@ -1,0 +1,48 @@
+.main {
+  margin-top: 45px;
+  // width: 300px;
+  .coin {
+    font-weight: 400;
+    color: #b8b8b8;
+  }
+  .counter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    .valueCoin {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 6px;
+      }
+      span {
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+    }
+    .control {
+      display: flex;
+      align-items: center;
+      .count {
+        margin: 0 18px;
+        font-weight: 700;
+      }
+      .counterButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33px;
+        height: 33px;
+        background-color: #e2e2e2;
+        border-radius: 6px;
+        background: #e2e2e2;
+        font-size: 2rem;
+        color: #7c7c7c;
+        cursor: pointer;
+        &:hover {
+          background: #c7c6c6;
+        }
+      }
+    }
+  }
+}

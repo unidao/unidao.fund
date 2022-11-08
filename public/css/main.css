@@ -3,9 +3,9 @@
 
 @font-face {
   font-family: "Suisse Intl Medium";
-  src: url("fonts/SuisseIntl-Regular.otf");
-  src: url("fonts/SuisseIntl-Bold.otf");
-  src: url("fonts/SuisseIntl-Black.otf");
+  src: url("/fonts/SuisseIntl-Regular.otf");
+  src: url("/fonts/SuisseIntl-Bold.otf");
+  src: url("/fonts/SuisseIntl-Black.otf");
 }
 
 
