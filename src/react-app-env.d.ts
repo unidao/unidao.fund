@@ -70,6 +70,8 @@ declare module '*.sass' {
   export default classes;
 }
 
+declare type Nullable<T> = T | undefined | null;
+
 interface Window {
   ethereum: any;
   config: any;

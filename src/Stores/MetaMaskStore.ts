@@ -1,7 +1,7 @@
 import { action, observable, makeObservable, runInAction } from 'mobx';
 import detectEthereumProvider from '@metamask/detect-provider';
 import { ethers } from 'ethers';
-import { reloadBrowser } from '../Utils/Reload';
+import { reloadBrowser } from '../Utils/reload';
 import { configNetList } from '../configNetList';
 import { isMobile } from 'react-device-detect';
 
