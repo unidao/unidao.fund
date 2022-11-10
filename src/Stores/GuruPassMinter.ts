@@ -7,6 +7,7 @@ class GuruPassMinter {
   @observable contract: Nullable<Contract> = null;
   @observable stageFinishTime: Nullable<number> = null;
   @observable stageSupply: Nullable<number> = null;
+  @observable tokenPrice: Nullable<number> = null;
 
   constructor() {
     makeObservable(this);
@@ -16,6 +17,7 @@ class GuruPassMinter {
   startApp = () => {
     this.getStageFinishTime();
     this.getStageSupply();
+    this.getTokenPrice();
   };
 
   getContract = () => {
@@ -67,6 +69,15 @@ class GuruPassMinter {
     this.callContractMethod('stageSupply').then((value) => {
       runInAction(() => {
         this.stageSupply = +ethers.utils.formatUnits(value, 0);
+      });
+    });
+  };
+
+  @action
+  getTokenPrice = () => {
+    this.callContractMethod('tokenPrice').then((value) => {
+      runInAction(() => {
+        this.tokenPrice = +ethers.utils.formatUnits(value, 18);
       });
     });
   };

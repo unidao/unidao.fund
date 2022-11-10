@@ -24,8 +24,16 @@
       display: flex;
       align-items: center;
       .count {
-        margin: 0 18px;
+        margin: 0 8px;
         font-weight: 700;
+        width: 3.5rem;
+        font-size: 1.125rem;
+        padding: 4px;
+        text-align: center;
+        background-color: #FAFAFA;
+        &:focus-visible {
+          outline: #5a3ae5 auto 1px;
+        }
       }
       .counterButton {
         display: flex;
@@ -36,7 +44,7 @@
         background-color: #e2e2e2;
         border-radius: 6px;
         background: #e2e2e2;
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #7c7c7c;
         cursor: pointer;
         &:hover {

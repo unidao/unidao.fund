@@ -14,9 +14,10 @@ export enum MetamaskState {
 
 class MetaMaskStore {
   @observable state = MetamaskState.Initial;
-  @observable currentAccount = '';
-  @observable provider: null | ethers.providers.Web3Provider = null;
-  @observable chainId = '';
+  @observable currentAccount: Nullable<string> = null;
+  @observable provider: Nullable<ethers.providers.Web3Provider> = null;
+  @observable chainId: Nullable<string> = null;
+  @observable balance: Nullable<string> = null;
 
   constructor() {
     makeObservable(this);
@@ -84,7 +85,7 @@ class MetaMaskStore {
     if (accounts.length === 0) {
       // MetaMask is locked or the user has not connected any accounts
       this.setState(MetamaskState.Installed);
-      this.currentAccount = '';
+      this.currentAccount = null;
     } else if (accounts[0] !== this.currentAccount) {
       this.currentAccount = accounts[0];
       this.setState(MetamaskState.Connected);
@@ -173,7 +174,24 @@ class MetaMaskStore {
     } else {
       this.provider = null;
     }
+    this.setBalance();
   }
+
+  @action
+  setBalance = async () => {
+    if (
+      this.currentAccount &&
+      this.provider &&
+      this.state === MetamaskState.Connected
+    ) {
+      const balance = await this.provider.getBalance(this.currentAccount);
+      runInAction(() => {
+        this.balance = Number(ethers.utils.formatUnits(balance, 18)).toFixed(4);
+      });
+    } else {
+      this.balance = null;
+    }
+  };
 }
 
 export default MetaMaskStore;
