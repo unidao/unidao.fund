@@ -7,4 +7,5 @@ interface ChainDataType {
   currency: string;
   decimals: number;
   scanAddress: string;
+  guruPassMinterAddress: string;
 }

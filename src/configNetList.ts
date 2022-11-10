@@ -13,6 +13,7 @@ const testData: ChainDataType[] = [
     currency: 'MATIC',
     decimals: 18,
     scanAddress: 'https://mumbai.polygonscan.com/address',
+    guruPassMinterAddress: '0xc6535032560c1eff94ba2e35fcd1b62666adbcc6',
   },
 ];
 
@@ -26,6 +27,7 @@ const prodData = [
     currency: 'MATIC',
     decimals: 18,
     scanAddress: 'https://polygonscan.com/address',
+    guruPassMinterAddress: '',
   },
 ];
 

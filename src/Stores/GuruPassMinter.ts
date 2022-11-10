@@ -1,6 +1,9 @@
 import { action, makeObservable, observable, runInAction } from 'mobx';
 import { ethers, Contract } from 'ethers';
 import { guruPassMinterAbi } from '../Contract/GuruPassMinterAbi';
+import { configNetList } from '../configNetList';
+
+const CONTRACT_ADDRESS = configNetList[0].guruPassMinterAddress;
 
 class GuruPassMinter {
   @observable provider: null | ethers.providers.Web3Provider = null;
@@ -8,6 +11,8 @@ class GuruPassMinter {
   @observable stageFinishTime: Nullable<number> = null;
   @observable stageSupply: Nullable<number> = null;
   @observable tokenPrice: Nullable<number> = null;
+  @observable tokensForPurchase = 1;
+  @observable transactionRequest = false;
 
   constructor() {
     makeObservable(this);
@@ -25,7 +30,7 @@ class GuruPassMinter {
       return this.contract;
     }
     const provider = this.getProvider();
-    const contractAddress = '0xc6535032560c1eff94ba2e35fcd1b62666adbcc6';
+    const contractAddress = CONTRACT_ADDRESS;
     if (!provider || !contractAddress) return null;
     this.contract = new ethers.Contract(
       contractAddress,
@@ -80,6 +85,42 @@ class GuruPassMinter {
         this.tokenPrice = +ethers.utils.formatUnits(value, 18);
       });
     });
+  };
+
+  @action
+  setTokensForPurchase = (value: number) => {
+    this.tokensForPurchase = value;
+  };
+
+  @action
+  buyTokens = async (from: Nullable<string>) => {
+    const to = CONTRACT_ADDRESS;
+    const total =
+      this.tokensForPurchase && this.tokenPrice
+        ? (this.tokensForPurchase * this.tokenPrice).toFixed(6)
+        : null;
+    if (!window.ethereum || !from || !to || !total) return;
+    const value = ethers.utils.parseUnits(total, 18);
+    this.transactionRequest = true;
+    window.ethereum
+      .request({
+        method: 'eth_sendTransaction',
+        params: [
+          {
+            from,
+            to,
+            value: value._hex,
+          },
+        ],
+      })
+      .then((txHash: any) => {
+        console.log(txHash);
+        this.transactionRequest = false;
+      })
+      .catch((error: any) => {
+        this.transactionRequest = false;
+        console.error(error);
+      });
   };
 }
 

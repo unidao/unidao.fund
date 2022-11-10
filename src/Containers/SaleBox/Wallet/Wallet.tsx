@@ -7,7 +7,7 @@ import { configNetList } from '../../../configNetList';
 import s from './Wallet.scss';
 
 const Wallet = () => {
-  const { metaMaskStore } = useStores();
+  const { metaMaskStore, guruPassMinter } = useStores();
 
   let unknownNetwork: null | Boolean = null;
   if (metaMaskStore.chainId) {
@@ -47,7 +47,14 @@ const Wallet = () => {
         </>
       )}
       {metaMaskStore.state === MetamaskState.Connected && (
-        <p className={s.note}>MetaMask connected </p>
+        <button
+          className={s.walletButton}
+          onClick={() => guruPassMinter.buyTokens(metaMaskStore.currentAccount)}
+          disabled={guruPassMinter.transactionRequest}
+        >
+          <img src={metamaskImg} alt="" />
+          Buy
+        </button>
       )}
       {unknownNetwork === false ? (
         <div className={s.networkSec}>

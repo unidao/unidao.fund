@@ -16,6 +16,10 @@
     img {
       margin-right: 14px;
     }
+    &:disabled {
+      cursor: default;
+      background-color: #E2E2E2;
+    }
   }
   .note {
     display: block;

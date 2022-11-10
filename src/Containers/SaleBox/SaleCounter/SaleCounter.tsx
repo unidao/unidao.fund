@@ -6,11 +6,10 @@ import s from './SaleCounter.scss';
 
 const SaleCounter = () => {
   const { metaMaskStore, guruPassMinter } = useStores();
-  const [count, setCount] = useState(1);
   const [total, setTotal] = useState<Nullable<string>>();
 
   const handleClickCount = (value: number) => {
-    const result = count + value;
+    const result = guruPassMinter.tokensForPurchase + value;
     setCountAndBalance(result);
   };
 
@@ -20,7 +19,7 @@ const SaleCounter = () => {
 
   useEffect(() => {
     if (metaMaskStore.balance && guruPassMinter.tokenPrice) {
-      setCountAndBalance(count);
+      setCountAndBalance(guruPassMinter.tokensForPurchase);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [metaMaskStore.balance, guruPassMinter.tokenPrice]);
@@ -29,7 +28,7 @@ const SaleCounter = () => {
     if (value >= 0 && metaMaskStore.balance && guruPassMinter.tokenPrice) {
       const total = value * guruPassMinter.tokenPrice;
       if (total <= +metaMaskStore.balance) {
-        setCount(value);
+        guruPassMinter.setTokensForPurchase(value);
         setTotal(total.toFixed(4));
       } else {
         setCountAndBalance(
@@ -56,7 +55,7 @@ const SaleCounter = () => {
           </button>
           <input
             className={s.count}
-            value={count}
+            value={guruPassMinter.tokensForPurchase}
             onChange={handleInputCount}
           />
           <button
