@@ -54,8 +54,6 @@ const SaleInformation = () => {
     };
   }, [guruPassMinter.stageFinishTime]);
 
-  const tokensLeft = 256;
-
   if (sale === false) {
     return <div className={s.address}>{metaMaskStore.currentAccount}</div>;
   }
@@ -65,7 +63,7 @@ const SaleInformation = () => {
       <div>
         <div>Tokens left</div>
         <div>
-          <b>{tokensLeft}</b>
+          <b>{guruPassMinter.stageSupply}</b>
         </div>
       </div>
       <div>

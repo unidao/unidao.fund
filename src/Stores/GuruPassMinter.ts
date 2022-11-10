@@ -1,4 +1,4 @@
-import { action, makeObservable, observable } from 'mobx';
+import { action, makeObservable, observable, runInAction } from 'mobx';
 import { ethers, Contract } from 'ethers';
 import { guruPassMinterAbi } from '../Contract/GuruPassMinterAbi';
 
@@ -6,6 +6,7 @@ class GuruPassMinter {
   @observable provider: null | ethers.providers.Web3Provider = null;
   @observable contract: Nullable<Contract> = null;
   @observable stageFinishTime: Nullable<number> = null;
+  @observable stageSupply: Nullable<number> = null;
 
   constructor() {
     makeObservable(this);
@@ -14,6 +15,7 @@ class GuruPassMinter {
 
   startApp = () => {
     this.getStageFinishTime();
+    this.getStageSupply();
   };
 
   getContract = () => {
@@ -40,17 +42,33 @@ class GuruPassMinter {
     return this.provider;
   };
 
-  @action
-  getStageFinishTime = async () => {
+  callContractMethod = async (method: string) => {
     const provider = this.getProvider();
     const contract = this.getContract();
     if (!provider || !contract) return;
     try {
-      const value = await contract.stageFinishTime();
-      this.stageFinishTime = +ethers.utils.formatUnits(value, 0);
+      return await contract[method]();
     } catch (e) {
       console.log('Error', e);
     }
+  };
+
+  @action
+  getStageFinishTime = () => {
+    this.callContractMethod('stageFinishTime').then((value) => {
+      runInAction(() => {
+        this.stageFinishTime = +ethers.utils.formatUnits(value, 0);
+      });
+    });
+  };
+
+  @action
+  getStageSupply = () => {
+    this.callContractMethod('stageSupply').then((value) => {
+      runInAction(() => {
+        this.stageSupply = +ethers.utils.formatUnits(value, 0);
+      });
+    });
   };
 }
 
