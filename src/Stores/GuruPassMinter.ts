@@ -16,14 +16,16 @@ class GuruPassMinter {
 
   constructor() {
     makeObservable(this);
-    this.startApp();
-  }
-
-  startApp = () => {
     this.getStageFinishTime();
     this.getStageSupply();
     this.getTokenPrice();
-  };
+
+    setInterval(() => {
+      this.getStageFinishTime();
+      this.getStageSupply();
+      this.getTokenPrice();
+    }, 60000);
+  }
 
   getContract = () => {
     if (this.contract) {

@@ -3,6 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { useStores } from '../../../Stores/RootStore';
 import maticImg from '../../../Resources/matic.png';
 import s from './SaleCounter.scss';
+import { MetamaskState } from '../../../Stores/MetaMaskStore';
 
 const SaleCounter = () => {
   const { metaMaskStore, guruPassMinter } = useStores();
@@ -37,6 +38,10 @@ const SaleCounter = () => {
       }
     }
   };
+
+  if (metaMaskStore.state !== MetamaskState.Connected) {
+    return null;
+  }
 
   return (
     <div className={s.main}>

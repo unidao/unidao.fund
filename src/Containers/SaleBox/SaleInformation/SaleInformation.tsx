@@ -3,6 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { useStores } from '../../../Stores/RootStore';
 import { getCurTimestamp } from '../../../Utils/timeUtilities';
 import s from './SaleInformation.scss';
+import { MetamaskState } from '../../../Stores/MetaMaskStore';
 
 const TimeItem = ({ value, name }: { value: number; name: string }) => {
   return (
@@ -53,6 +54,13 @@ const SaleInformation = () => {
       clearInterval(interval);
     };
   }, [guruPassMinter.stageFinishTime]);
+
+  if (
+    metaMaskStore.state === MetamaskState.Initial ||
+    metaMaskStore.state === MetamaskState.NotInstalled
+  ) {
+    return null;
+  }
 
   if (sale === false) {
     return <div className={s.address}>{metaMaskStore.currentAccount}</div>;
