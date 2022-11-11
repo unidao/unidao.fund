@@ -103,7 +103,9 @@ class GuruPassMinter {
         : null;
     if (!window.ethereum || !from || !to || !total) return;
     const value = ethers.utils.parseUnits(total, 18);
-    this.transactionRequest = true;
+    runInAction(() => {
+      this.transactionRequest = true;
+    });
     window.ethereum
       .request({
         method: 'eth_sendTransaction',
@@ -117,10 +119,14 @@ class GuruPassMinter {
       })
       .then((txHash: any) => {
         console.log(txHash);
-        this.transactionRequest = false;
+        runInAction(() => {
+          this.transactionRequest = false;
+        });
       })
       .catch((error: any) => {
-        this.transactionRequest = false;
+        runInAction(() => {
+          this.transactionRequest = false;
+        });
         console.error(error);
       });
   };

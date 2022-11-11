@@ -171,6 +171,35 @@ class MetaMaskStore {
     }
     if (notNull) {
       this.provider = new ethers.providers.Web3Provider(window.ethereum);
+
+      const filterToAccount = {
+        topics: [
+          null,
+          null,
+          null,
+          ethers.utils.hexZeroPad(this.currentAccount, 32),
+        ],
+      };
+
+      const filterFromAccount = {
+        topics: [
+          null,
+          null,
+          ethers.utils.hexZeroPad(this.currentAccount, 32),
+          null,
+        ],
+      };
+
+      const toAccount = () => {
+        this.setBalance();
+      };
+
+      const fromAccount = () => {
+        this.setBalance();
+      };
+
+      this.provider.on(filterToAccount, toAccount);
+      this.provider.on(filterFromAccount, fromAccount);
     } else {
       this.provider = null;
     }
