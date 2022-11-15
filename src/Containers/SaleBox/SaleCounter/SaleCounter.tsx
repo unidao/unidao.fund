@@ -62,7 +62,7 @@ const SaleCounter = () => {
             className={s.counterButton}
             onClick={() => handleClickCount(-1)}
           >
-            -
+            <span className={s.horizontal} />
           </button>
           <input
             className={s.count}
@@ -73,7 +73,8 @@ const SaleCounter = () => {
             className={s.counterButton}
             onClick={() => handleClickCount(1)}
           >
-            +
+            <span className={s.horizontal} />
+            <span className={s.vertical} />
           </button>
         </div>
       </div>
