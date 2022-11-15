@@ -11,7 +11,9 @@ const SaleCounter = () => {
 
   const handleClickCount = (value: number) => {
     const result = guruPassMinter.tokensForPurchase + value;
-    setCountAndBalance(result);
+    if (result > 0) {
+      setCountAndBalance(result);
+    }
   };
 
   const handleInputCount = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,6 +30,10 @@ const SaleCounter = () => {
   const setCountAndBalance = (value: number) => {
     if (value >= 0 && metaMaskStore.balance && guruPassMinter.tokenPrice) {
       const total = value * guruPassMinter.tokenPrice;
+      if (guruPassMinter.stageSupply && value > guruPassMinter.stageSupply) {
+        setCountAndBalance(guruPassMinter.stageSupply);
+        return;
+      }
       if (total <= +metaMaskStore.balance) {
         guruPassMinter.setTokensForPurchase(value);
         setTotal(total.toFixed(4));
