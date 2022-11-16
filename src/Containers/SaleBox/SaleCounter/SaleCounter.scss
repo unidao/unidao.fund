@@ -1,0 +1,71 @@
+.main {
+  margin-top: 45px;
+  // width: 300px;
+  .coin {
+    font-weight: 400;
+    color: #b8b8b8;
+  }
+  .counter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    .valueCoin {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 6px;
+      }
+      span {
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+    }
+    .control {
+      display: flex;
+      align-items: center;
+      .count {
+        margin: 0 8px;
+        font-weight: 700;
+        width: 3.5rem;
+        font-size: 1.125rem;
+        padding: 4px;
+        text-align: center;
+        background-color: #FAFAFA;
+        &:focus-visible {
+          outline: #5a3ae5 auto 1px;
+        }
+      }
+      .counterButton {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        background-color: #e2e2e2;
+        border-radius: 6px;
+        cursor: pointer;
+        &:hover {
+          background: #c7c6c6;
+        }
+        .horizontal {
+          position: absolute;
+          background-color: #7c7c7c;
+          width: 16px;
+          height: 2px;
+          left: 50%;
+          margin-left: -8px;
+          top: 50%;
+          margin-top: -1px;
+        }
+        .vertical {
+          position: absolute;
+          background-color: #7c7c7c;
+          width: 2px;
+          height: 16px;
+          left: 50%;
+          margin-left: -1px;
+          top: 50%;
+          margin-top: -8px;
+        }
+      }
+    }
+  }
+}
