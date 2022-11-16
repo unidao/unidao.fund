@@ -36,34 +36,19 @@
         }
       }
       .counterButton {
-        position: relative;
-        width: 32px;
-        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33px;
+        height: 33px;
         background-color: #e2e2e2;
         border-radius: 6px;
+        background: #e2e2e2;
+        font-size: 1.8rem;
+        color: #7c7c7c;
         cursor: pointer;
         &:hover {
           background: #c7c6c6;
-        }
-        .horizontal {
-          position: absolute;
-          background-color: #7c7c7c;
-          width: 16px;
-          height: 2px;
-          left: 50%;
-          margin-left: -8px;
-          top: 50%;
-          margin-top: -1px;
-        }
-        .vertical {
-          position: absolute;
-          background-color: #7c7c7c;
-          width: 2px;
-          height: 16px;
-          left: 50%;
-          margin-left: -1px;
-          top: 50%;
-          margin-top: -8px;
         }
       }
     }
