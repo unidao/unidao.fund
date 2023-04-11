@@ -1635,12 +1635,13 @@ body::-webkit-scrollbar-thumb {
 .topnav {
   width: 100%;
   flex-direction: row;
-  padding: 12px 12px 0 12px;
+  padding: 12px 0px;
   justify-content: space-between;
   /*overflow: hidden;*/
   /*background-color: #333;*/
   /*position: relative;*/
   display: none;
+  /*padding: 1rem;*/
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
