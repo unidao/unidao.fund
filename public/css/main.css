@@ -140,13 +140,13 @@ main {
   display: flex;
   flex-direction: column;
   /*align-items: center;*/
-  gap: var(--grid-gap);
+  gap: clamp(24px,12vw,64px);
 }
 
 .hero-headline {
   font-style: normal;
   font-weight: 900;
-  font-size: clamp(64px, 6vw, 75px);
+  font-size: clamp(42px, 4vw, 42px);
   line-height: 120%;
   text-transform: uppercase;
 }
@@ -393,7 +393,7 @@ main {
   flex-direction: row;
   gap: 2vh;
   width: 100%;
-  max-width: 300px;
+  /*max-width: 300px;*/
   border-radius: 16px;
   background-color: white;
   padding: 1rem;
@@ -432,16 +432,16 @@ main {
 }
 
 .partner-block:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
 
 .partner-img {
   width: 100%;
-  max-width: fit-content;
+  max-width: 200px;
   height: 100%;
   max-height: 60px;
   object-fit: contain;
+  /*-webkit-filter: grayscale(20%); !* Safari 6.0 - 9.0 *!*/
 }
 
 .hero-block {
@@ -465,7 +465,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 42px 32px;
+  /*gap: 42px 32px;*/
 }
 
 .center {
@@ -703,10 +703,20 @@ main {
 }
 
 .hero-active-zone {
+  width: 100%;
   display: flex;
+  color: #fff;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
   align-items: flex-start;
+  height: 50vh;
+  background-image: url(../img/test-thumbnail.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  padding: 2rem;
+  text-shadow: 2px 12px 32px rgba(0, 0, 0, 0.9);
 }
 
 .card-img {
@@ -844,6 +854,7 @@ main {
 }
 
 .guru-off {
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1087,7 +1098,7 @@ main {
   flex-direction: row;
   align-items: center;
   gap: 16px;
-  z-index: 50;
+  /*z-index: 50;*/
 }
 
 .element {
@@ -1428,12 +1439,12 @@ main {
 .content-gap {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding-top: 10vh;
+  gap: clamp(24px,12vw,64px);
+  /*padding-top: 10vh;*/
 }
 
 #welcome-screen {
-  padding-top: 64px;
+  /*padding-top: 64px;*/
 }
 
 #navbar {
