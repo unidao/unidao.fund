@@ -1,0 +1,29 @@
+.main {
+  width: 100%;
+  background: #18101d;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1440px;
+    min-height: 460px;
+    height: 100%;
+    margin: 0 auto;
+    img {
+      height: 350px;
+      width: auto;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 460px;
+      text-align: center;
+      color: #e7e8ea;
+      font-size: 24px;
+      .title {
+        font-size: 68px;
+      }
+    }
+  }
+}
