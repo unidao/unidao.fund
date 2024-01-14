@@ -2,9 +2,38 @@
   width: 100%;
   height: auto;
 }
-.wrapper{
+.wrapper {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+}
+div{
+  display: block;
+}
+
+.show-pc{
+  display: none;
+}
+
+.show-mobile{
+  display: none;
+}
+
+@media screen and (min-width: 425px) {
+  .show-pc {
+    display: block;
+  }
+  .show-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .show-pc {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
 }
