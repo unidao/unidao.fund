@@ -8,16 +8,12 @@
   display: flex;
   flex-direction: column;
 }
-div{
-  display: block;
-}
-
 .show-pc{
   display: none;
 }
 
 .show-mobile{
-  display: none;
+  display: block;
 }
 
 @media screen and (min-width: 425px) {
