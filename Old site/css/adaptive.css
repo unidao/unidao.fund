@@ -1,0 +1,220 @@
+
+@media (max-width: 1920px) {
+  .card {
+    width: calc(25% - 12px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: calc(25% - 12px);
+  }
+
+  .event-begins {
+    width: 100%;
+    max-width: 100%;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 8px);
+  }
+
+  .speaker-info {
+    width: 60%;
+  }
+
+  .main-event-right {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .main-event {
+    flex-wrap: wrap;
+    padding: 12px !important;
+  }
+  .burger {
+    display: block;
+  }
+
+  #buy-pass {
+    display: none;
+  }
+
+  .header-list {
+    display: none !important;
+  }
+
+  /*.partners-container {*/
+  /*  align-items: flex-start !important;*/
+  /*  justify-content: flex-start;*/
+  /*}*/
+
+  /*.partner-block {*/
+  /*  width: 50%;*/
+  /*}*/
+
+  .audience-card {
+    width: 100% !important;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .hero-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .event-begins {
+    width: 100%;
+    height: 300px;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-active-zone {
+    align-items: center !important;
+  }
+
+  .hero-headline {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 10.5vw;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .NFT-offer-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-social-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  .social-media-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .event-on-calendar {
+    flex-grow: 0;
+    flex-wrap: wrap !important;
+  }
+
+  .calendar-place-thumbnail {
+    width: 100% !important;
+    height: 100px !important;
+    max-width: 100% !important;
+  }
+
+  .pass-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-wrap: wrap;
+  }
+
+  .NFT-offer-container {
+    padding-bottom: 0px;
+  }
+  .topnav {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding-bottom: 24px;
+    gap: 32px;
+  }
+
+  .header-body {
+    display: none;
+  }
+  .partners-container{
+    grid-template-columns: repeat(auto-fit, minmax(33%, 3fr));
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 100%;
+  }
+
+  /*.event-on-calendar {*/
+  /*  flex-grow: 0;*/
+  /*  flex-wrap: wrap;*/
+  /*}*/
+  .calendar-place-thumbnail {
+    /*width: 100% !important;*/
+    height: 100px !important;
+    /*max-width: 100% !important;*/
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .active-block {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .separate-block {
+    display: none !important;
+  }
+
+  .nft-pass {
+    /*width: 268px;*/
+    /*height: 370px;*/
+  }
+
+  .main-event-left {
+    flex-wrap: wrap;
+  }
+
+  .main-event-left {
+    gap: 2vw;
+  }
+
+  .main-speaker-info {
+    width: 100%;
+  }
+  .feature-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-card{
+    width: 100%;
+    max-width: 80vw;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .partners-container{
+    grid-template-columns: repeat(auto-fit, minmax(50%, 3fr));
+  }
+}
