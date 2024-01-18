@@ -428,7 +428,7 @@ a {
 body {
   font-family: "GT Walsheim Pro";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 16px;
   background: #F9F3EE;
 }
 
@@ -462,8 +462,8 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
   max-width: 468px;
@@ -501,7 +501,7 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 2rem;
+  padding: 24px;
   border: 0;
   border-radius: 42px;
   background-color: #E4E4E4;
@@ -900,7 +900,7 @@ body {
   justify-content: center;
   background-position: center;
   background-size: cover;
-  background-color: #737B97;
+  background-color: #000;
   /* background-image: url(villa-section-bg.jpg); */
   overflow: hidden;
 }
@@ -912,7 +912,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .6;
+  opacity: .5;
 }
 
 @media screen and (min-width: 768px) {
@@ -1387,6 +1387,10 @@ body {
   left: 0;
   max-width: 384px;
 }
+@media screen and (min-width: 1200px) {
+  .practice-content {top: 40%;}
+}
+
 @media screen and (min-width: 1720px) {
   .practice-content {left: 116px;}
 }
@@ -1813,7 +1817,7 @@ body {
 }
 
 .address-map {
-  height: 575px;
+  overflow: hidden;
   border-radius: 32px;
   width: 100%;
   background-size: cover;
@@ -1832,18 +1836,11 @@ body {
   .address-map {
     margin-left: 16px;
     width: 60%;
-    height: 300px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .address-map {
-    height: 420px;
-  }
 }
 @media screen and (min-width: 1440px) {
-  .address-map {
-    height: 320px;
-  }
   .qr-image {
     width: 100%;
     height: 100%;
@@ -2422,7 +2419,6 @@ body {
     justify-content: space-between;
   }
 }
-
 
 
 
