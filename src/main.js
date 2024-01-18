@@ -25,7 +25,7 @@ function updateSvg() {
     const bumperFixed = document.getElementById("bumper-fixed");
     bumperFixed.setAttribute("d", wave)
     bumperFixed.innerHTML = `<animate attributeType="XML" attributeName="d" from="${wave}" dur="2s" repeatCount="indefinite"/>`
-  }
+  }      
 }
 updateSvg()
 window.addEventListener('resize', updateSvg)
@@ -58,7 +58,7 @@ const images = container.querySelectorAll('.fixed-img-wrap')
 let vh = 1080
 
 function centr() {
-  const px = documentWidth < 700 ? window.scrollY - 80 : window.scrollY
+  const px = documentWidth < 700 ? window.scrollY - 60 : window.scrollY
   images.forEach((el, i) => {
     let tr = px - sections[i].offsetTop + (i === 0 ? 0 : vh)
     if (tr < 0) return;
