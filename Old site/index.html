@@ -1,103 +1,674 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Future of Happiness event</title>
 
-  <title>Future of Happiness</title>
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="img/icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/fake-site.css">
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-  <meta name="description" content="Закрытое событие на частном острове: тренинг от Дмитрия и Нина Хара на тему отношений - 100 реализованных мужчин/100 реализованных женщин, которые встретились в одном месте, чтобы познакомиться, возможно найти свою вторую половинку и ярко провести время.">
-  <meta name="robots" content="index,follow">
-  <meta name="copyright" content="Gleb Shishov">
-  <meta name="theme-color" content="#FFFFFF"/>
-  <meta name="twitter:card" content="img/FOH-event/event-site-thumbnail.png">
-  <meta name="twitter:image:alt" content="Закрытое событие на частном острове: тренинг от Дмитрия и Нина Хара на тему отношений - 100 реализованных мужчин/100 реализованных женщин, которые встретились в одном месте, чтобы познакомиться, возможно найти свою вторую половинку и ярко провести время.">
 
+  <link rel="stylesheet" href="src/styles.min.css?v=0002">
+  <link rel="stylesheet" href="gstyles.css?v=00014">
+
+  <meta property="og:site_name" content="Future of Happiness event">
+  <meta property="og:url" content="https://guruvilla.com/">
+  <meta property="og:site" content="https://guruvilla.com/"/>
+  <meta property="og:image" content="/event-site-thumbnail.png" />
   <meta property="og:locale" content="en_EN">
   <meta property="og:type" content="website">
+
+  <meta name="copyright" content="Gleb Shishov">
+  <meta name="theme-color" content="#FFFFFF"/>
+  <meta name="robots" content="index,follow">
+  <meta name="twitter:card" content="/event-site-thumbnail.png">
+  <meta name="twitter:image:alt" content="Закрытое событие на частном острове: тренинг от Дмитрия и Нина Хара на тему отношений - 25 реализованных мужчин/25 реализованных женщин, которые встретились в одном месте, чтобы познакомиться, возможно найти свою вторую половинку и ярко провести время.">
+
   <meta property="og:title" content="Future of Happiness event">
-  <meta property="og:description" content="Закрытое событие на частном острове: тренинг от Дмитрия и Нина Хара на тему отношений - 100 реализованных мужчин/100 реализованных женщин, которые встретились в одном месте, чтобы познакомиться, возможно найти свою вторую половинку и ярко провести время.">
-  <meta property="og:image" content="img/FOH-event/event-site-thumbnail.png">
-  <meta property="og:url" content="https://guruvilla.com/event">
-  <meta property="og:site_name" content="Future of Happiness event">
+  <meta property="og:description" content="Закрытое событие на частном острове: тренинг от Дмитрия и Нина Хара на тему отношений - 25 реализованных мужчин/25 реализованных женщин, которые встретились в одном месте, чтобы познакомиться, возможно найти свою вторую половинку и ярко провести время.">
+
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="alternate" hreflang="x-default" href="/">
+  <link rel="alternate" hreflang="en" href="/en">
 </head>
-<body class="wrapper">
-<div class="show-mobile">
-  <a href="https://t.me/gorbachevakay" target="_blank" class="fake-img">
-    <img src="img/FOH-event/425-768/1-section-welcome.jpg" class="fake-img">
-  </a>
-  <img src="img/FOH-event/425-768/2-section-place.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/3-section-iwant.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/4-section-hara.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/5-Cultivation.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/6-Intuition.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/7-Awakining.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/8-Heats.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/section%20flame.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/9-section-bracers.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/10-section-tiles.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/11-section-villa.jpg" class="fake-img" loading="lazy">
-<!--  <a href="https://t.me/gorbachevakay" target="_blank"class="fake-img" >-->
-<!--    <img src="img/FOH-event/425-768/12-section-tickets.jpg" class="fake-img" loading="lazy">-->
-<!--  </a>-->
-  <img src="img/FOH-event/425-768/13-section-map.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/425-768/14-section-parthers.jpg" class="fake-img" loading="lazy">
-</div>
-<div class="show-pc">
-  <a href="https://t.me/gorbachevakay" target="_blank" class="fake-img">
-    <img src="img/FOH-event/768-1920/1-section-welcome.jpg" class="fake-img" loading="lazy">
-  </a>
-  <img src="img/FOH-event/768-1920/2-section-place.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/3-section-iwant.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/4-section-hara.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/5-Cultivation.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/6-Intuition.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/7-Awakining.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/8-Heats.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/section%20flame.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/9-section-bracers.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/10-section-tiles.jpg" class="fake-img" loading="lazy">
-  <img src="img/FOH-event/768-1920/11-section-villa.jpg" class="fake-img" loading="lazy">
-<!--  <a href="https://t.me/gorbachevakay" target="_blank"class="fake-img">-->
-<!--    <img src="img/FOH-event/768-1920/12-section-tickets.jpg" class="fake-img" loading="lazy">-->
-<!--  </a>-->
-  <img src="img/FOH-event/768-1920/13-section-map.jpg" class="fake-img">
-  <img src="img/FOH-event/768-1920/14-section-parthers.jpg" class="fake-img" loading="lazy">
-</div>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="header-logo">
+      <img class="header__logo" src="src/logo.svg" alt="Future & Happiness">
+    </a>
+    <nav class="header-nav">
+      <a href="#program" class="nav-item nav-link">Программа</a>
+      <a href="#place" class="nav-item nav-link">Место</a>
+      <a href="https://t.me/gorbachevakay" target="_blank" class="nav-item nav-link">Телеграм</a>
+      <div class="locale-select">
+        <a href="/" class="nav-item locale-select-item">RU</a>
+        <a href="/en" class="nav-item locale-select-item">EN</a>
+      </div>
+    </nav>
+
+    <button class="burger-btn"><span class="burger">menu</span></button>
+  </header>
+
+
+
+
+
+  <div class="hero-section hidden-x">
+    <div class="container relative">
+
+      <div class="hero-inner tac mw340 mw568--md">
+        <img src="src/main-logo.png" class="db w-full" alt="Future & Happiness">
+
+        <div class="hero-ribbon relative mb12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hero-ribbon-rec" viewBox="0 0 373 62" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3.44137 43.7362C3.50889 47.1335 1.37761 50.3099 0.815796 53.6612C0.0204031 58.4057 4.04052 62.5673 8.80974 61.9365L53.4462 56.032C197.691 51.4847 273.889 50.0664 364.976 50.2266C369.972 50.2354 373.498 45.3271 371.887 40.5985L364.075 17.6658C363.255 15.2569 364.191 12.6218 364.786 10.1478L365.067 8.98133C366.266 4.00361 362.085 -0.622209 357.011 0.0687807L292.241 8.89096L10.135 14.9469C6.12203 15.033 2.93688 18.3526 3.01664 22.3657L3.44137 43.7362Z"
+              fill="#F80077" />
+          </svg>
+          <span class="hero-ribbon-text fz31 fz46--md fw8 ff2">Слияние сердец</span>
+        </div>
+
+        <div class="fz38 fw7 hero-text-shadow ff2 italic">26-27-28 Января</div>
+        <div class="fz20 fw7 mb12 hero-text-shadow">На Bentley Villa</div>
+        <a href="#tickets" class="btn hero-btn mb12">Билеты</a>
+        <div class="fz18 hero-text-shadow">The World Islands, Dubai</div>
+      </div>
+
+    </div>
+    <div class="container hero-bottom fz36 lh44 pl84 pl0--xl">
+      <img class="hero-flower" src="src/hero-flower.svg" alt="">
+      Только<br>50 человек
+    </div>
+  </div>
+
+  <div id="place" class="villa-section relative">
+    <video class="video" playsinline autoplay muted loop poster="src/villa-section-bg.jpg">
+      <source src="src/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="container tac py240 relative">
+      <h2 class="fz51 fz96--md fw8 lh uppercase">Bentley villa Dubai</h2>
+      <div class="fz20 fz24--md">
+        <p class="mb32">3-х дневный ретрит для пар <br> с&nbsp;Димой и Ниной Хары</p>
+        <p class=" mb32">Темы: <br>Любовь, отношения, богатство</p>
+        <p class=" mb32">Проживание на частном острове</p>
+        <p class="">Шоу программа со звездой</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <div class="want-section hidden py64">
+    <div class="relative">
+      <h2 class="tac fz52 ls-1 fw4 mb16">Для кого этот ивент</h2>
+      <div class="tac fz48 ls-1 o2 mb36">я хочу ...</div>
+
+      <div class="want-items">
+        <div class="mw400 mw527--xl w-full">
+
+          <div class="want-item wi1">
+            <div class="want-msg">
+              <div class="want-msg__name">Коля</div>
+              <div class="want-msg__cloud">...качественный нетворкинг<br> в Дубае</div>
+            </div>
+          </div>
+
+          <div class="want-item wi2">
+            <div class="wi2-bubble">настоящей любви</div>
+            <div class="wi2-bubble">семейном счастье</div>
+            <div class="wi2-bubble">взаимопонимания</div>
+            <div class="want-msg">
+              <div class="want-msg__name">Анастасия</div>
+              <div class="want-msg__cloud">Мечтаю о крепких отношениях …</div>
+
+            </div>
+          </div>
+
+          <div class="want-item wi3">
+            <div class="want-msg">
+              <div class="want-msg__name">Игорь</div>
+              <div class="want-msg__cloud">Хочу раскачать денежный потенциал!</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mw400 mw527--xl w-full">
+
+          <div class="want-item wi4">
+            <div class="wi4-bubble">родную душу</div>
+            <div class="wi4-bubble">партнера</div>
+            <div class="wi4-bubble">познакомится</div>
+            <div class="want-msg">
+              <div class="want-msg__name">Мария</div>
+              <div class="want-msg__cloud">.. найти вторую половинку …</div>
+
+            </div>
+          </div>
+
+          <div class="want-item wi5">
+            <div class="want-msg">
+              <div class="want-msg__name">Кирил</div>
+              <div class="want-msg__cloud">... поднять вибрации на уровень “Бог”встретить своего человека🔥</div>
+            </div>
+          </div>
+
+          <div class="want-item wi6">
+            <div class="want-msg">
+              <div class="want-msg__name">Артём</div>
+              <div class="want-msg__cloud">Хочу увеличить доход от бизнеса х3, х4, х5!</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <div class="section-hara bumper-responsive-section bg-cover">
+    <div class="section-hara__inner mxa w-full mw672 tac">
+
+      <div class="hero-ribbon relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hero-ribbon-rec" viewBox="0 0 373 62" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.44137 43.7362C3.50889 47.1335 1.37761 50.3099 0.815796 53.6612C0.0204031 58.4057 4.04052 62.5673 8.80974 61.9365L53.4462 56.032C197.691 51.4847 273.889 50.0664 364.976 50.2266C369.972 50.2354 373.498 45.3271 371.887 40.5985L364.075 17.6658C363.255 15.2569 364.191 12.6218 364.786 10.1478L365.067 8.98133C366.266 4.00361 362.085 -0.622209 357.011 0.0687807L292.241 8.89096L10.135 14.9469C6.12203 15.033 2.93688 18.3526 3.01664 22.3657L3.44137 43.7362Z"
+            fill="#F80077" />
+        </svg>
+        <span class="hero-ribbon-text fz34 fz54--md italic fw8 ff2">слияние сердец</span>
+      </div>
+
+      <div class="fz37 ff2 fw9 italic">от Димитрия и Нины Хара</div>
+      <div class="fz25 ff2 fw5 italic">2 дня . 4 практики . Отношения нового уровня и высоких вибраций</div>
+    </div>
+  </div>
+
+  <div class="authors-section bumper-responsive-section bg-light py64 py92--lg">
+    <div class="container row rg32">
+      <div class="author">
+        <div class="author-photo" style="background-image: url(src/author-1.jpg)"></div>
+        <div class="author-info">
+          <!-- <div class="author-name fz48 mb22 ff1">Дмитрий Хара</div> -->
+          <img src="src/author-1.png" alt="Дмитрий Хара" class="author-name">
+          <div class="fz18 lh22 color-primary-dark mb22">
+            Основатель проекта «ПерепроШивка», который помог 100 000+ людей найти себя, более 200 инструкторов по всему миру.
+            <br><br>
+            Автор книг-бестселлеров, меняющих сознание: «П.Ш.», «Трэш», «Сияние», «ПерепроШивка», «64 Дара Бытия», метафорических карт «Камертон Вселенной».
+          </div>
+          <a class="fz18 lh22 learn-more" href="#">Узнать больше<svg class="w24 h24" fill="none"><use href="#arrow"></use></svg></a>
+        </div>
+
+      </div>
+
+      <div class="author">
+        <div class="author-photo" style="background-image: url(src/author-2.jpg)"></div>
+        <div class="author-info">
+          <!-- <div class="author-name fz48 mb22 ff1">Нина Хара</div> -->
+          <img src="src/author-2.png" alt="Нина Хара" class="author-name">
+
+          <div class="fz18 lh22 color-primary-dark mb22">
+            Трансформационный тренер, эксперт в области практик по обретению связи с родом
+            <br><br>
+            Помогла более 1.000.000 человек гармонизировать отношения с собой и родными
+            <br>Любимая женщина и жена Дмитрия Хара
+            <br>Автор тренингов: «Дары Рода», «Привлечение истинного партнера», «Игра в изобилие», «Женская Перепрошивка», практики «Пробуждение Богини».
+          </div>
+          <a class="fz18 lh22 learn-more" href="#">Узнать больше<svg class="w24 h24" fill="none"><use href="#arrow"></use></svg></a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="fixed-bg-sections" id="program">
+
+    <section class="practice-section practice-section-1 bumper-section"
+      style="background-image: url(src/5-Cultivation.jpg);">
+      <div class="relative h-full container">
+        <div class="fixed-img-wrap fixed-img-wrap-1">
+          <div class="fixed-img" style="background-image: url(src/fixed-01.png);"></div>
+        </div>
+        <div class="practice-content">
+          <div class="mb12 fz24 lh color-secondary">Практика 1</div>
+          <h3 class="mb32 fz48 fw4 lh ff1 color-secondary">Обновление</h3>
+          <p class="mb32 fz18 lh22">Новые настройки и освежающий взгляд на отношения.<br><br>
+            Техники и инструменты в отношениях — что ложно, а что истина
+          </p>
+          <div class="fw7 mb6 fz18">Для кого?</div>
+          <p class="mb32 fz18 lh22">
+            Для&nbsp;пар&nbsp;которые хотят обновить свои ощущения в&nbsp;отношениях с&nbsp;партнёром
+          </p>
+          <a class="fz18 lh22 learn-more" href="#">Узнать больше<svg class="w24 h24" fill="none">
+              <use href="#arrow"></use>
+            </svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice-section practice-section-2 bumper-section" style="background-image: url(src/6-Intuition.jpg);">
+      <div class="relative h-full container">
+        <div class="fixed-img-wrap">
+          <div class="fixed-img" style="background-image: url(src/fixed-02.png);"></div>
+        </div>
+        <div class="practice-content">
+          <div class="mb12 fz24 lh">Практика 3</div>
+          <h3 class="mb32 fz48 fw4 lh ff1 color-secondary">Интуиция</h3>
+          <p class="mb32 fz18 lh22">Знакомство со своей энергией, как чувствовать себя и действовать из своей энергии привлекая родную душу «soul mate»</p>
+          <div class="fw7 mb6 fz18">Для кого?</div>
+          <p class="mb32 fz18 lh22">
+            Для&nbsp;всех кто&nbsp;хочет раскрыть себя свою сердечную чакру и&nbsp;встретить своего человека
+          </p>
+          <a class="fz18 lh22 learn-more" href="#">Узнать больше<svg class="w24 h24" fill="none">
+              <use href="#arrow"></use>
+            </svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice-section bumper-section" style="background-image: url(src/7-Awakining.jpg);">
+      <div class="relative h-full container">
+        <div class="fixed-img-wrap">
+          <div class="fixed-img" style="background-image: url(src/fixed-03.png);"></div>
+        </div>
+        <div class="practice-content">
+          <div class="mb12 fz24 lh">Практика 2</div>
+          <h3 class="mb32 fz48 fw4 lh ff1">Пробуждение</h3>
+          <p class="mb24 fz24 ff2 ">вибрации внутреннего бога/богини</p>
+          <p class="mb32 fz18 lh22">Активно-интуитивное знакомство<br>
+            Телесно-ориентированная практика по закреплению новых настроек в теле. Проживание аспекта своей божественной энергии и усиление ее.</p>
+          <div class="fw7 mb6 fz18">Для кого?</div>
+          <p class="mb32 fz18 lh22">Для всех кто хочет раскрыть свою сексуальную энергию и научится проживать опыт через тело</p>
+          <a class="fz18 lh22 learn-more" href="#">Узнать больше<svg class="w24 h24" fill="none">
+              <use href="#arrow"></use>
+            </svg></a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="practice-section bumper-section" style="background-image: url(src/8-Heats.jpg);">
+      <!-- <svg class="bumper-down" viewBox="0 0 1923 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 31.9998L1923 32V16C1923 16 1646.03 -19.5 984.018 15.9999C322.001 51.4998 1.39877e-06 15.9998 1.39877e-06 15.9998L0 31.9998Z" fill="#F9F3EE"/>
+      </svg> -->
+      <div class="relative h-full container">
+        <div class="fixed-img-wrap">
+          <div class="fixed-img" style="background-image: url(src/fixed-04.png);"></div>
+        </div>
+        <div class="practice-content">
+          <div class="mb12 fz24 lh">Практика 4</div>
+          <h3 class="mb32 fz48 fw4 lh ff1 color-secondary">Слияние Сердец</h3>
+          <p class="mb32 fz18 lh22">Как со настроится на истинное партнёрство</p>
+          <p class="mb32 fz18 lh22">Модель позволяющая распознать свою близнецовую душу и произвести со настройку на всех уровнях (ум, эмоции, тело, дух, душа).</p>
+          <div class="fw7 mb6 fz18">Для кого?</div>
+          <p class="mb32 fz18 lh22">Для всех кто хочет в 2024 быть в счастливых и гармоничных отношений.</p>
+          <a class="fz18 lh22 learn-more" href="#">Узнать больше<svg class="w24 h24" fill="none">
+              <use href="#arrow"></use>
+            </svg></a>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="bracelets-section bumper-section bg-light py64 py84--xxl">
+    <div class="container row jcc aic--xl jcb--xl">
+
+      <div class="w-full mw400">
+        <div class="fz24 tac mb12 color-primary-dark">Парный тренинг - 50 человек</div>
+        <div class="jcb uppercase mw400 mxa mb28">
+          <div>
+            <div class="fw8 fz72 fz90--xs fz96--md color-rock">25</div>
+            <div class="aic fz18 fz22--xs fz24--md">
+              <img src="src/venus.png" alt="W" class="w56 h56 w60--md h60--md">
+              <span class="color-dusty-grey ml6">Женщин</span>
+            </div>
+          </div>
+          <div>
+            <div class="fw8 fz72 fz90--xs fz96--md color-rock">25</div>
+            <div class="aic fz18 fz22--xs fz24--md">
+              <img src="src/mars.png" alt="M" class="w56 h56 w60--md h60--md">
+              <span class="color-dusty-grey ml6">Мужчин</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="df--md aic--md w-full mw582">
+        <img src="src/braceletes.png" alt="braceletes" class="db mxa mb16 mr24--md w110 h120 w245--md h265--md">
+        <div class="">
+          <h4 class="fz32 mb32 color-rock">Каждому по браслету</h4>
+
+          <div class="mb32 fz18 lh22 aic">
+            <svg class="w28 h28" fill="none">
+              <use href="#heart"></use>
+            </svg>
+            <span class="ml12" style="color: #FF8B1F;">Для тех, кто ищет вторую половинку</span>
+          </div>
+          <div class="mb32 fz18 lh22 aic">
+            <div class="w33 h32 relative pt4">
+              <svg class="w28 h28" fill="none">
+                <use href="#heart-filled"></use>
+              </svg>
+              <svg class="w28 h28" fill="none" style="position: absolute;top: 0;right: 0;">
+                <use href="#heart"></use>
+              </svg>
+            </div>
+            <span class="ml12" style="color: #5315D8;">Для тех, кто уже нашел ее</span>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="twins-fire">
+    <div class="container">
+      <h1>Знания как раскрыть близнецовое пламя </h1>
+      <H1>🔥🔥🔥</H1>
+      <span>Союз женщины и мужчины<br>на 100%</span>
+    </div>
+  </div>
+
+
+
+
+  <div class="gallery-section pb64 pt92 pt120--md bg-pich bumper-section">
+    <div class="container">
+
+      <div class="col16--lg col24--xl mxa color-primary-dark tac mb32">
+        <h2 class="fz48 ff1 lh fw4 mb16">3 мощнейших дня для раскрытия своего потенциала</h2>
+        <div class="fz24 lh36 mb16">Bentley Villa, The World Islands, Dubai</div>
+        <div class="uppercase fz18">ВСТРЕТИТЬ РАССВЕТ В ЛУЧШЕЙ КОМПАНИИ</div>
+      </div>
+
+    </div>
+
+      <div class="gallery">
+        <div class="gallery-row">
+          <div class="gallery-tile w550" style="background-image: url(src/tile-1.png);">Частный остров</div>
+          <div class="gallery-tile w1350" style="background-image: url(src/tile-2.png);">Перезагрузка сознания и состояния</div>
+          <div class="gallery-tile w232" style="background-image: url(src/tile-3.png);"></div>
+        </div>
+        <div class="gallery-row">
+          <div class="gallery-tile w684" style="background-image: url(src/tile-4.png);">Рассвет и закат на берегу моря</div>
+          <div class="gallery-tile w474" style="background-image: url(src/tile-5.png);"></div>
+          <div class="gallery-tile w495" style="background-image: url(src/tile-6.png);">Лучшие ментальные практики</div>
+          <div class="gallery-tile w475" style="background-image: url(src/tile-7.png);">Истинная любовь</div>
+        </div>
+      </div>
+
+    <div class="gallery-pills mt72 mt156--md mt252--xxxl">
+
+      <div class="gallery-pill" style="background-image: url(src/pill-newtwork.jpg);">
+        <div class="gallery-pill__inner">
+          <div class="fz24 fz42--lg gallery-pill-title">Бизнес нетворкинг</div>
+          <div class="fz24">с яркими</div>
+          <div class="fz24">предпринимателями</div>
+          <div class="fz24">со всего мира</div>
+        </div>
+      </div>
+      <div class="gallery-pill" style="background-image: url(src/pill-media.jpg);">
+        <div class="gallery-pill__inner">
+          <div class="fz24 gallery-pill-title mb10">МЕДИА ЗОНА</div>
+          <div class="fz24">интервью со звёздами и гостями</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="tickets" class="relative pb64 pt92 pt120--md bg-bege bumper-section hidden-x">
+    <div class="tickets-wrapper">
+      <div class="tickets">
+
+        <div class="ticket ticket-mars color-primary-dark">
+          <div>
+            <div class="ticket-title">Он</div>
+            <ul class="ticket__list">
+              <li>Яхта на остров</li>
+              <li>Напитки и еда</li>
+              <li>2 ночи проживание в отеле на острове</li>
+              <li>3 дня мастер-класса</li>
+              <li>Фильм с вашим участием</li>
+              <li>Шоу программа со звездой</li>
+              <li>DJ afterparty</li>
+              <li>Яхта с острова</li>
+            </ul>
+          </div>
+          <div>
+            <div class="ticket__price--red df fz20"><del>15000</del><div class="ml5">15ч 15 м</div></div>
+            <div class="ticket__price df">9 999<div class="ml7">$</div></div>
+            <div class="mb10 o2">Осталось биллетов 26 / 50</div>
+            <div>
+              <a href="https://t.me/happiness_support" class="btn ticket-btn p20 btn-block mb6">Купить билет</a>
+              <a href="https://t.me/happiness_support" class="btn btn-gray btn-block fz15 fw5 p20">Купить не за крипту</a>
+            </div>
+          </div>
+          <div class="ticket__bracelets"><span class="fz26 mr4">+</span><div>Браслет</div></div>
+        </div>
+
+        <div class="ticket ticket-venus color-primary-dark">
+          <div>
+            <div class="ticket-title">Она</div>
+            <ul class="ticket__list">
+              <li>Яхта на остров</li>
+              <li>Напитки и еда</li>
+              <li>2 ночи проживание в отеле на острове</li>
+              <li>3 дня мастер-класса</li>
+              <li>Фильм с вашим участием</li>
+              <li>Шоу программа со звездой</li>
+              <li>DJ afterparty</li>
+              <li>Яхта с острова</li>
+            </ul>
+          </div>
+          <div>
+            <div class="ticket__price--red df fz20"><del>15000</del><div class="ml5">15ч 15 м</div></div>
+            <div class="ticket__price df">9 999<div class="ml7">$</div></div>
+            <div class="mb10 o2">Осталось биллетов 26 / 50</div>
+            <div>
+              <a href="https://t.me/happiness_support" class="btn ticket-btn p20 btn-block mb6">Купить билет</a>
+              <a href="https://t.me/happiness_support" class="btn btn-gray btn-block fz15 fw5 p20">Купить не за крипту</a>
+            </div>
+          </div>
+          <div class="ticket__bracelets"><span class="fz26 mr4">+</span><div>Браслет</div></div>
+        </div>
+
+
+        <div class="ticket color-primary-dark">
+          <div>
+            <div class="ticket-title">Пара</div>
+            <ul class="ticket__list">
+              <li>Яхта на остров</li>
+              <li>Напитки и еда</li>
+              <li>2 ночи проживание в отеле на острове</li>
+              <li>3 дня мастер-класса</li>
+              <li>Фильм с вашим участием</li>
+              <li>Шоу программа со звездой</li>
+              <li>DJ afterparty</li>
+              <li>Яхта с острова</li>
+            </ul>
+          </div>
+          <div>
+            <div class="ticket__price--red df fz20"><del>25000</del><div class="ml5">15ч 15 м</div></div>
+            <div class="ticket__price df">19 999<div class="ml7">$</div></div>
+            <div class="mb10 o2">Осталось биллетов 26 / 50</div>
+            <div>
+              <a href="https://t.me/happiness_support" class="btn ticket-btn p20 btn-block mb6">Купить билет</a>
+              <a href="https://t.me/happiness_support" class="btn btn-gray btn-block fz15 fw5 p20">Купить не за крипту</a>
+            </div>
+          </div>
+          <div class="ticket__bracelets"><span class="fz26 mr4">+</span><div>Браслет для пары</div></div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="address-section py32 py64--md">
+    <div class="container df--md">
+      <div class="address-info">
+        <h2 class="fz40 ls3 uppercase">Встречаемся В 10:45 в порту</h2>
+        <div class="df--xl">
+          <div class="fz18 lh22 mra">
+            <div>Адрес порта Dubai Canal Marine Transport Station 1</div>
+            <div class="mb24">Просьба не опаздывать</div>
+            <div>Если у вас возникли вопросы свяжитесь с нами</div>
+            <a href="https://t.me/gorbachevakay" target="_blank" class="tg-btn">телеграм</a>
+          </div>
+          <div class="qr"><div class="qr-image"></div></div>
+        </div>
+      </div>
+      <div class="address-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8288.590803418218!2d55.230633860740774!3d25.198659908624474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0x77b8622d47d7c214!2zNTZYTSs1OSAtIER1YmFpIC0g0J7QsdGK0LXQtNC40L3QtdC90L3Ri9C1INCQ0YDQsNCx0YHQutC40LUg0K3QvNC40YDQsNGC0Ys!5e0!3m2!1sru!2sru!4v1705509163013!5m2!1sru!2sru" width="100%" height="auto" style="border:0; padding: 12px; min-height: 50vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="partners py32 py64--md">
+    <div class="container">
+      <h2 class="fz32 mb5">Спасибо спонсорам и партнерам</h2>
+      <a href="https://t.me/gorbachevakay" target="_blank" class="fz18 lh mb36 partners-link">Стать спонсором или партнером</a>
+      <div class="row jca aic">
+        <div class="w-full col12 mw200--md p16 h100 h128--md df aic jcc"><img height="50" src="src/integrium-logo.png" alt="partner-logo"></div>
+        <a href="https://pintopay.me/" target="_blank" class="w-full col12 mw200--md p16 h100 h128--md df aic jcc"><img height="50" src="src/pintopay-logo.png" alt="partner-logo"></a>
+        <div class="w-full col12 mw200--md p16 h100 h128--md df aic jcc"><img height="50" src="src/uart-logo.png" alt="partner-logo"></div>
+        <a href="https://uant.space" target="_blank" class="w-full col12 mw200--md p16 h100 h128--md df aic jcc"><img height="50" src="src/uant-logo.png" alt="partner-logo"></a>
+        <a href="https://crossfi.org/" target="_blank" class="w-full col12 mw200--md p16 h100 h128--md df aic jcc"><img height="44" src="src/croffsi-logo.svg" alt="partner-logo"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer py32 py64--md">
+    <div class="container row jcb rg12">
+      <div class="w-full mw377">
+        <h2 class="fz32 mb5">Future & Happiness Summit</h2>
+        <div class="fz18 lh22 mb5">Bentley Villa, The World Islands, Дубай</div>
+        <div class="fz18 lh22 italic">26/27/28 января 2024</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://t.me/happiness_support" class="footer-link">Организатор</a>
+        <a href="https://t.me/gorbachevakay" target="_blank" class="footer-link">Телеграм канал</a>
+        <a href="https://t.me/happiness_support" class="footer-link">Проблема с оплатой</a>
+        <a href="https://t.me/happiness_support" class="footer-link">Документы</a>
+      </div>
+    </div>
+      <!-- <div class="footer__copyright">
+        <div>© 2023 xxx Inc</div>
+      </div> -->
+  </footer>
+
+
+  <svg class="db" style="height: 0;position:absolute;z-index:-1">
+    <symbol id="heart" viewBox="0 0 30 29">
+      <path
+        d="M26.8409 4.0896C26.1568 3.36088 25.3445 2.78281 24.4504 2.38841C23.5563 1.99401 22.598 1.79102 21.6302 1.79102C20.6625 1.79102 19.7042 1.99401 18.8101 2.38841C17.916 2.78281 17.1037 3.36088 16.4195 4.0896L14.9996 5.60125L13.5798 4.0896C12.1978 2.61833 10.3234 1.79178 8.36905 1.79178C6.41466 1.79178 4.54031 2.61833 3.15835 4.0896C1.77638 5.56088 1 7.55635 1 9.63705C1 11.7177 1.77638 13.7132 3.15835 15.1845L4.57823 16.6961L14.9996 27.791L25.4211 16.6961L26.8409 15.1845C27.5254 14.4561 28.0684 13.5913 28.4389 12.6394C28.8093 11.6876 29 10.6674 29 9.63705C29 8.60672 28.8093 7.58649 28.4389 6.63465C28.0684 5.6828 27.5254 4.81798 26.8409 4.0896Z"
+        stroke="#503838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="heart-filled" viewBox="0 0 30 29">
+      <path
+        d="M26.8409 4.0896C26.1568 3.36088 25.3445 2.78281 24.4504 2.38841C23.5563 1.99401 22.598 1.79102 21.6302 1.79102C20.6625 1.79102 19.7042 1.99401 18.8101 2.38841C17.916 2.78281 17.1037 3.36088 16.4195 4.0896L14.9996 5.60125L13.5798 4.0896C12.1978 2.61833 10.3234 1.79178 8.36905 1.79178C6.41466 1.79178 4.54031 2.61833 3.15835 4.0896C1.77638 5.56088 1 7.55635 1 9.63705C1 11.7177 1.77638 13.7132 3.15835 15.1845L4.57823 16.6961L14.9996 27.791L25.4211 16.6961L26.8409 15.1845C27.5254 14.4561 28.0684 13.5913 28.4389 12.6394C28.8093 11.6876 29 10.6674 29 9.63705C29 8.60672 28.8093 7.58649 28.4389 6.63465C28.0684 5.6828 27.5254 4.81798 26.8409 4.0896Z"
+        fill="#503838" />
+    </symbol>
+
+    <symbol id="arrow" viewBox="0 0 24 25">
+      <path d="M3 13.4248H20.5M20.5 13.4248L13 5.9248M20.5 13.4248L13 20.9248" stroke="currentColor" stroke-width="2" />
+    </symbol>
+
+  </svg>
+
+  <svg class="db" width="0" height="0">
+    <defs>
+      <clipPath id="bumper">
+        <path id="bumper-fixed" d="M0 3000L1920 3000L1920 16C1920 16 1640 -20 984 16C320 52 0 16 0 16L0 3000Z"
+          fill="#F9F3EE">
+          <animate attributeType="XML" attributeName="d"
+            from="M0 3000L1920 3000L1920 16C1920 16 1640 -20 984 16C320 52 0 16 0 16L0 3000Z" dur="2s"
+            repeatCount="indefinite" />
+        </path>
+      </clipPath>
+
+      <clipPath id="bumper-responsive">
+        <path id="dynamic-path" d="M0 3000L1920 3000L1920 16C1920 16 1640 -20 984 16C320 52 0 16 0 16L0 3000Z"
+          fill="#F9F3EE" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <!-- d="M0 3000L1920 3000L1920 16C1920 16 1640 -20 984 16C320 52 0 16 0 16L0 3000Z"  -->
+  <script src="src/main.js?v=00117"></script>
+
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8L57PNKB6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N8L57PNKB6');
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8L57PNKB6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N8L57PNKB6');
+  </script>
+
 </body>
-<script>
-  window.ga = function () {
-    ga.q.push(arguments)
-  };
-  ga.q = [];
-  ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('set', 'transport', 'beacon');
-  ga('send', 'pageview')
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8L57PNKB6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N8L57PNKB6');
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8L57PNKB6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N8L57PNKB6');
-</script>
 </html>
