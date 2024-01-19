@@ -55,14 +55,14 @@ const container = document.querySelector('.fixed-bg-sections')
 const sections = document.querySelectorAll('.practice-section')
 const images = container.querySelectorAll('.fixed-img-wrap')
 
-let vh = 1080
+let vh = 1080, pc_offset = documentWidth < 1600 ? 0 : 100
 
 function centr() {
   const px = documentWidth < 700 ? window.scrollY - 60 : window.scrollY
   images.forEach((el, i) => {
     let tr = px - sections[i].offsetTop + (i === 0 ? 0 : vh)
     if (tr < 0) return;
-    if (i == 3 && tr > vh) return;
+    if (i == 3 && tr > vh+pc_offset) return;
     el.style.transform = `translateY(${tr}px)`
   })
 }
@@ -79,8 +79,8 @@ const observer = new IntersectionObserver(([entry]) => {
 observer.observe(container)
 
 
-const wantSection = document.querySelector('.want-section')
-const obs2 = new IntersectionObserver(([entry])=>{
-  if(entry.isIntersecting) wantSection.classList.add('in-viewport')
-})
-obs2.observe(wantSection)
+// const wantSection = document.querySelector('.want-section')
+// const obs2 = new IntersectionObserver(([entry])=>{
+//   if(entry.isIntersecting) wantSection.classList.add('in-viewport')
+// })
+// obs2.observe(wantSection)

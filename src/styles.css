@@ -485,7 +485,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1800px) {
 
   .container {
     max-width: 1408px;
@@ -619,7 +619,7 @@ body {
     top: -200px;
     left: 0;
     z-index: 500;
-
+    
     transition: 0.2s;
     transition-delay: 0.1s;
     will-change: transform;
@@ -631,7 +631,7 @@ body {
     transition-duration: 0.3s;
     transform: translateY(248px);
   }
-
+  
   .nav-item {
     will-change: opacity, transform;
     transition: 0.3s;
@@ -639,7 +639,7 @@ body {
     opacity: 0;
     transform: translateX(20px);
   }
-
+  
   .header-nav-open .nav-item:nth-child(2) {
     transition-delay: 0.4s;
   }
@@ -714,7 +714,7 @@ body {
   .close.burger-btn .burger::before {
     transform: translateY(7px) rotate(135deg);
   }
-
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -929,7 +929,7 @@ body {
     position: absolute;
     top: 42px;
     right: -160px;
-  }
+  }  
 }
 
 
@@ -1157,7 +1157,7 @@ body {
   .want-msg__name {
     font-size: 20px;
   }
-
+  
   .want-section::after {
     pointer-events: none;
     content: '';
@@ -1172,7 +1172,7 @@ body {
     bottom: 100px;
     right: -60px;
     opacity: .2;
-  }
+  }  
 }
 @media screen and (min-width: 1440px) {
 
@@ -1323,7 +1323,7 @@ body {
     bottom: 100px;
     right: -60px;
     opacity: .2;
-  }
+  }  
   .author {
     display: flex;
     width: 100%;
@@ -1477,7 +1477,7 @@ body {
     filter: blur(6px);
   }
 
-
+  
   .practice-section-1::after {
     right: -150px;
   }
@@ -1489,6 +1489,14 @@ body {
   .fixed-img {
     width: 608px;
     height: 608px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+
+  .fixed-img {
+    width: 780px;
+    height: 780px;
   }
 }
 
@@ -1544,7 +1552,7 @@ body {
   }
 
 }
-
+ 
 
 
 .gallery {
@@ -1829,7 +1837,7 @@ body {
   display: none;
 }
 @media screen and (min-width: 768px) {
-
+  
   .address-info {
     width: 40%;
   }
@@ -2207,7 +2215,7 @@ body {
 .col14 {
   width: 100%;
   max-width: 58.333%;
-  flex-basis: 58.333%;
+  flex-basis: 58.333%;  
 }
 .col8 {
   width: 100%;
@@ -2267,7 +2275,7 @@ body {
     width: 83.333%;
     flex-basis: 83.333%;
   }
-
+  
 	.df--sm {
 		display: flex;
 	}
@@ -2288,7 +2296,7 @@ body {
 	}
   .col14--md {
     max-width: 58.333%;
-    flex-basis: 58.333%;
+    flex-basis: 58.333%;    
   }
 	.col16--md {
 		max-width: 66.666%;
@@ -2326,10 +2334,10 @@ body {
 		max-width: 41.666%;
 		flex-basis: 41.666%;
 	}
-
+  
   .col14--lg {
     max-width: 58.333%;
-    flex-basis: 58.333%;
+    flex-basis: 58.333%;  
   }
   .col8--lg{
     max-width: 33.333%;
@@ -2419,6 +2427,7 @@ body {
     justify-content: space-between;
   }
 }
+
 
 
 
